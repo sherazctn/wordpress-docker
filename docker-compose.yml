@@ -1,0 +1,10 @@
+version: '2'
+services:
+  config-server:
+    image: ccc/config-server
+    restart: always
+  registration-server:
+    image: ccc/registration-server
+    restart: always
+    ports:
+      - 1111:1111
